@@ -20,7 +20,7 @@ feature {NONE} -- Initialization
 		do
 			create parser.make
 
-			parser.parse_file("test_input1.txt")
+			parser.parse_file("test_input1-linux.txt")
 			--comment2
 		end
 

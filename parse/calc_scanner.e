@@ -107,32 +107,34 @@ feature {NONE} -- Table templates
 			-- Template for `yy_nxt'
 		once
 			Result := yy_fixed_array (<<
-			    0,    4,    5,    6,    7,    8,    9,   12,   11,   10,
-			   13,    3,   13,   13,   13,   13,   13,   13, yy_Dummy>>)
+			    0,    4,    5,    6,    7,    8,    9,   10,   11,   13,
+			   12,   13,   12,   14,    3,   14,   14,   14,   14,   14,
+			   14,   14, yy_Dummy>>)
 		end
 
 	yy_chk_template: SPECIAL [INTEGER]
 			-- Template for `yy_chk'
 		once
 			Result := yy_fixed_array (<<
-			    0,    1,    1,    1,    1,    1,    1,   16,   15,   14,
-			    3,   13,   13,   13,   13,   13,   13,   13, yy_Dummy>>)
+			    0,    1,    1,    1,    1,    1,    1,    1,   15,   13,
+			   12,   10,    8,    3,   14,   14,   14,   14,   14,   14,
+			   14,   14, yy_Dummy>>)
 		end
 
 	yy_base_template: SPECIAL [INTEGER]
 			-- Template for `yy_base'
 		once
 			Result := yy_fixed_array (<<
-			    0,    0,    0,   10,   11,    0,   11,    0,    0,    0,
-			    0,    0,    0,   11,    7,    5,    3, yy_Dummy>>)
+			    0,    0,    0,   13,   14,    0,   14,    0,    7,   14,
+			    4,    0,    5,    2,   14,    6, yy_Dummy>>)
 		end
 
 	yy_def_template: SPECIAL [INTEGER]
 			-- Template for `yy_def'
 		once
 			Result := yy_fixed_array (<<
-			    0,   13,    1,   13,   13,   14,   13,   14,   15,   16,
-			   14,   15,   16,    0,   13,   13,   13, yy_Dummy>>)
+			    0,   14,    1,   14,   14,   15,   14,   15,   14,   14,
+			   14,   15,   14,   14,    0,   14, yy_Dummy>>)
 		end
 
 	yy_ec_template: SPECIAL [INTEGER]
@@ -145,14 +147,14 @@ feature {NONE} -- Table templates
 			    1,    1,    2,    1,    1,    1,    1,    1,    1,    1,
 			    1,    1,    1,    1,    1,    1,    1,    1,    5,    5,
 			    5,    5,    5,    5,    5,    5,    5,    5,    1,    1,
-			    1,    1,    1,    1,    1,    6,    6,    6,    6,    6,
-			    6,    6,    6,    6,    6,    6,    6,    6,    6,    6,
-			    6,    6,    6,    6,    6,    6,    6,    6,    6,    6,
-			    6,    1,    1,    1,    1,    1,    1,    6,    6,    6,
+			    1,    1,    1,    6,    1,    7,    7,    7,    7,    7,
+			    7,    7,    7,    7,    7,    7,    7,    7,    7,    7,
+			    7,    7,    7,    7,    7,    7,    7,    7,    7,    7,
+			    7,    1,    1,    1,    1,    1,    1,    7,    7,    7,
 
-			    6,    6,    6,    6,    6,    6,    6,    6,    6,    6,
-			    6,    6,    6,    6,    6,    6,    6,    6,    6,    6,
-			    6,    6,    6,    1,    1,    1,    1,    1,    1,    1,
+			    7,    7,    7,    7,    7,    7,    7,    7,    7,    7,
+			    7,    7,    7,    7,    7,    7,    7,    7,    7,    7,
+			    7,    7,    7,    1,    1,    1,    1,    1,    1,    1,
 			    1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
 			    1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
 			    1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -173,27 +175,27 @@ feature {NONE} -- Table templates
 			-- Template for `yy_meta'
 		once
 			Result := yy_fixed_array (<<
-			    0,    1,    2,    1,    2,    3,    4, yy_Dummy>>)
+			    0,    1,    2,    1,    2,    1,    1,    1, yy_Dummy>>)
 		end
 
 	yy_accept_template: SPECIAL [INTEGER]
 			-- Template for `yy_accept'
 		once
 			Result := yy_fixed_array (<<
-			    0,    0,    0,    7,    5,    1,    2,    1,    3,    4,
-			    1,    3,    4,    0, yy_Dummy>>)
+			    0,    0,    0,    7,    5,    1,    2,    1,    3,    2,
+			    4,    1,    3,    4,    0, yy_Dummy>>)
 		end
 
 feature {NONE} -- Constants
 
-	yyJam_base: INTEGER = 11
+	yyJam_base: INTEGER = 14
 			-- Position in `yy_nxt'/`yy_chk' tables
 			-- where default jam table starts
 
-	yyJam_state: INTEGER = 13
+	yyJam_state: INTEGER = 14
 			-- State id corresponding to jam state
 
-	yyTemplate_mark: INTEGER = 14
+	yyTemplate_mark: INTEGER = 15
 			-- Mark between normal states and templates
 
 	yyNull_equiv_class: INTEGER = 1
