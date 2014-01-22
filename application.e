@@ -21,7 +21,7 @@ feature {NONE} -- Initialization
 			create parser.make
 
 			parser.parse_file("test_input1.txt")
-			--comment
+			--comment2
 		end
 
 end
