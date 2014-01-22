@@ -28,7 +28,7 @@ WS		[ \t\r]+
 
 {WS}		-- ignore whitespaces
 
-[\n\r]		{ -- return an end-of-line token when the new line character is encountered
+[\n\r?]		{ -- return an end-of-line token when the new line character is encountered
 			last_token := EOL 
 		}
 		
